@@ -1,0 +1,79 @@
+#about {
+  min-height: 720px;
+}
+
+#about-content {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.line1 {
+  background-color: var(--important);
+  width: calc(1420px - 29%);
+  height: 1.5px;
+}
+
+.section-name {
+  font-size: 25px;
+  line-height: 35px;
+  margin: 0 8px;
+}
+
+.line2 {
+  background-color: var(--important);
+  width: calc(1420px - 81%);
+  height: 1.5px;
+}
+
+#about-me {
+  width: 665px;
+  font-size: 25px;
+  margin: 50px 0 50px 40px;
+}
+
+.part-one,
+.part-two,
+.part-three {
+  color: rgba(255, 255, 255, 0.9);
+  display: block;
+  margin-bottom: 30px;
+}
+
+.part-three {
+  margin-bottom: 50px;
+}
+
+#tech-list {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.tech-block {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.tech-block img {
+  width: 40px;
+}
+
+.tech-block p {
+  margin-left: 15px;
+}
+
+#about-img {
+  background-image: url("../../../assets/Vector.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transform: scaleX(-1);
+  margin: 50px 220px 0 0;
+  opacity: 0.3;
+}

@@ -1,0 +1,72 @@
+#experience {
+  height: 820px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.line1 {
+  background-color: var(--important);
+  width: calc(1420px / 2 - 97px);
+  height: 1.5px;
+}
+
+.section-name {
+  font-size: 25px;
+  line-height: 35px;
+  margin: 0 8px;
+}
+
+.line2 {
+  background-color: var(--important);
+  width: calc(1420px / 2 - 97px);
+  height: 1.5px;
+}
+
+#experience-cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 40px 0 0 0;
+}
+
+.card {
+  padding: 21px;
+  margin: 0 auto 50px;
+  background-color: #3b454e;
+  width: 400px;
+  height: 230px;
+  border-radius: 13px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-heading img {
+  height: 40px;
+}
+
+.card-heading h3 {
+  font-size: 32px;
+  font-weight: 400;
+  width: 230px;
+}
+
+.card-text {
+  font-size: 24px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+img[alt="GitHub"] {
+  margin-left: 20px;
+}
