@@ -6,6 +6,19 @@
   --important: #fff0b5;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(59, 71, 82, 1);
+  border-radius: 10px;
+}
+
 *,
 html,
 body {
