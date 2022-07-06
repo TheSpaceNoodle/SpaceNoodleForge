@@ -30,7 +30,7 @@
 
 .contact-me {
   width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 75px;
 }
 
 .contact-me h1 {
@@ -45,16 +45,12 @@
   margin-bottom: 50px;
 }
 
-button {
+.contact-me-button {
   background: none;
   border-color: var(--important);
   padding: 12px 65px;
   border-radius: 12px;
   border: 1px solid var(--important);
-  margin-bottom: 75px;
-}
-
-button span {
   font-size: 32px;
 }
 
