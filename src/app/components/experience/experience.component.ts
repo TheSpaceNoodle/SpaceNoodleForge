@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-experience',
@@ -58,7 +59,14 @@ export class ExperienceComponent implements OnInit {
     //   text: '',
     // },
   ];
-  constructor() {}
 
-  ngOnInit(): void {}
+  trackByIndex(id: number, element: any) {
+    return element ? element.id : null;
+  }
+
+  ngOnInit(): void {
+    AOS.init({
+      once: true,
+    });
+  }
 }

@@ -1,5 +1,10 @@
 <section id="experience">
-  <div class="section-heading">
+  <div
+    class="section-heading"
+    data-aos="fade-up"
+    data-aos-duration="500"
+    data-aos-delay="200"
+  >
     <div class="line1"></div>
     <div class="section-name">
       <span class="number">02. </span>My Experience
@@ -8,7 +13,20 @@
   </div>
 
   <div id="experience-cards">
-    <div class="card" *ngFor="let work of myWorks">
+    <a
+      class="card"
+      *ngFor="let work of myWorks; trackBy: trackByIndex"
+      data-aos="fade-up"
+      data-aos-duration="500"
+      data-aos-delay="250"
+      href="{{
+        work.links.outLink
+          ? work.links.outLink
+          : work.links.gitHub
+          ? work.links.gitHub
+          : ''
+      }}"
+    >
       <div class="card-heading">
         <h3 class="card-title">{{ work.title }}</h3>
         <div class="card-links">
@@ -29,6 +47,6 @@
         </div>
       </div>
       <p class="card-text" [innerHTML]="work.text"></p>
-    </div>
+    </a>
   </div>
 </section>
