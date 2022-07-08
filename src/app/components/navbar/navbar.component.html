@@ -1,4 +1,9 @@
-<div id="navbar">
+<div
+  id="navbar"
+  [ngClass]="
+    scrolled == 1 ? 'fixed-hidden' : scrolled == 2 ? 'fixed-shown' : ''
+  "
+>
   <div id="main-logo">
     <a href="#home"><img src="../../../assets/logo.png" alt="" /></a>
   </div>
@@ -15,24 +20,5 @@
         <a href="#contacts"><span class="number">03.</span> Contacts</a>
       </li>
     </ul>
-  </div>
-  <div
-    id="socials"
-    data-aos="fade-left"
-    data-aos-duration="1000"
-    data-aos-delay="150"
-  >
-    <a href="https://www.instagram.com/aurelionsmol/">
-      <img src="../../../assets/socials/Instagram.svg" alt="Instagram" />
-    </a>
-    <a href="https://www.linkedin.com/in/volodymyr-shcherbyna-64a67a1bb/">
-      <img src="../../../assets/socials/Linkedin.svg" alt="Linkedin" />
-    </a>
-    <a href="https://github.com/SheogorathD">
-      <img src="../../../assets/socials/GitHub.svg" alt="GitHub" />
-    </a>
-    <a href="https://twitter.com/LeSpaceNoodle">
-      <img src="../../../assets/socials/Twitter.svg" alt="Twitter" />
-    </a>
   </div>
 </div>

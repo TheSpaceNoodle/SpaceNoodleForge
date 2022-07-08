@@ -1,0 +1,13 @@
+#socials {
+  position: fixed;
+  display: flex;
+  flex-flow: column;
+  height: 200px;
+  justify-content: space-between;
+  right: 2px;
+  bottom: 20px;
+}
+
+#socials img {
+  width: 30px;
+}
