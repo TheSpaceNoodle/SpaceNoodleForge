@@ -8,6 +8,7 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SocialsComponent } from './components/socials/socials.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { SocialsComponent } from './components/socials/socials.component';
     AboutComponent,
     NavbarComponent,
     SocialsComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule],
   providers: [],

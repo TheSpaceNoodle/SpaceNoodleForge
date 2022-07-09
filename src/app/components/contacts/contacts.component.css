@@ -1,13 +1,16 @@
 #contacts {
-  height: 750px;
   text-align: center;
 }
 
 .section-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  margin-top: 80px;
-  margin-bottom: 100px;
+  margin-top: 10px;
+  margin-bottom: 50px;
 }
 
 .line1 {
@@ -46,43 +49,11 @@
   border-radius: 12px;
   border: 1px solid var(--important);
   font-size: 32px;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 
 .contact-me-button:hover {
   background-color: rgba(255, 240, 181, 0.2);
-}
-
-#attribution {
-  width: 820px;
-  margin: 0 auto;
-  font-size: 32px;
-  margin-bottom: 60px;
-}
-
-#github-link {
-  margin: 0 auto;
-}
-
-.brittany {
-  color: #64ffda;
-  text-decoration: none;
-  transition: 0.2s ease-in-out;
-}
-
-.brittany:hover {
-  text-shadow: 0px 0px 10px rgba(100, 255, 218, 1);
-}
-
-#github-link {
-  font-size: 32px;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-#github-link a {
-  transition: 0.2s ease-in-out;
-}
-
-#github-link a:hover {
-  text-shadow: 0px 0px 10px rgba(255, 240, 181, 1);
 }

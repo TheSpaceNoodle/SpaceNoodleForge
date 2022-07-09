@@ -1,8 +1,15 @@
 #home {
   min-height: 640px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -12,6 +19,7 @@
   background-image: url("../../../assets/d20.svg");
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-filter: blur(4px);
   filter: blur(4px);
 }
 
@@ -59,6 +67,8 @@ p {
   padding: 12px 84px;
   border: 1px solid var(--important);
   border-radius: 10px;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 
