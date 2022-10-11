@@ -50,6 +50,14 @@ export class ExperienceComponent implements OnInit {
       },
       text: 'My <span class="highlight">portfolio website</span> (the one you are reading this at). Built with <span class="highlight">Angular</span> and <span class="highlight">CSS</span>.',
     },
+    {
+      title: 'Random Challenges',
+      links: {
+        outLink: 'https://randomnoodlechallenges.web.app',
+        gitHub: 'https://github.com/SheogorathD/random-challenges',
+      },
+      text: 'My <span class="highlight">latest project</span>. The idea of this project is to help developers to get more hands-on experience by completing challenges proposed by other people. Built with <span class="highlight">Angular</span>, <span class="highlight">SCSS</span> and <span class="highlight">Firebase</span>.',
+    },
     // {
     //   title: '',
     //   links: {
