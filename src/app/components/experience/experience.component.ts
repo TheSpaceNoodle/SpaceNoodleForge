@@ -56,7 +56,15 @@ export class ExperienceComponent implements OnInit {
         outLink: 'https://randomnoodlechallenges.web.app',
         gitHub: 'https://github.com/SheogorathD/random-challenges',
       },
-      text: 'My <span class="highlight">latest project</span>. The idea of this project is to help developers to get more hands-on experience by completing challenges proposed by other people. Built with <span class="highlight">Angular</span>, <span class="highlight">SCSS</span> and <span class="highlight">Firebase</span>.',
+      text: 'The idea of this project is to help developers to get more hands-on experience by completing challenges proposed by other people. Built with <span class="highlight">Angular</span>, <span class="highlight">SCSS</span> and <span class="highlight">Firebase</span>.',
+    },
+    {
+      title: 'KSU Startups',
+      links: {
+        outLink: 'https://startup.kspu.edu/welcome',
+        gitHub: 'https://github.com/SheogorathD/ksu-startups',
+      },
+      text: 'My <span class="highlight">latest project</span> and my diploma project. This website will help startup founders find investors for their projects. Built with <span class="highlight">Angular</span>, <span class="highlight">NgRx</span>, <span class="highlight">SCSS</span> and <span class="highlight">Firebase</span>.',
     },
     // {
     //   title: '',
