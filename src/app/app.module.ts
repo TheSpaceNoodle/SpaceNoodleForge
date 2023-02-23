@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
-import { AboutComponent } from './components/about/about.component';
-import { ContactsComponent } from './components/contacts/contacts.component';
-import { ExperienceComponent } from './components/experience/experience.component';
-import { HomeComponent } from './components/home/home.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { SocialsComponent } from './components/socials/socials.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { AppComponent } from 'src/app/app.component';
+import { AboutComponent } from 'src/app/components/about/about.component';
+import { ContactsComponent } from 'src/app/components/contacts/contacts.component';
+import { ExperienceComponent } from 'src/app/components/experience/experience.component';
+import { FooterComponent } from 'src/app/components/footer/footer.component';
+import { HomeComponent } from 'src/app/components/home/home.component';
+import { NavbarComponent } from 'src/app/components/navbar/navbar.component';
+import { SocialsComponent } from 'src/app/components/socials/socials.component';
 
 @NgModule({
   declarations: [
