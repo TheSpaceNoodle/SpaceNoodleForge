@@ -1,15 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import * as AOS from 'aos';
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css'],
 })
-export class AboutComponent implements OnInit {
+export class AboutComponent {
   constructor() {}
-
-  ngOnInit(): void {
-    AOS.init({ once: true });
-  }
 }

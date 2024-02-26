@@ -1,17 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import * as AOS from 'aos';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-socials',
   templateUrl: './socials.component.html',
   styleUrls: ['./socials.component.css'],
 })
-export class SocialsComponent implements OnInit {
+export class SocialsComponent {
   constructor() {}
-
-  ngOnInit(): void {
-    AOS.init({
-      once: true,
-    });
-  }
 }

@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import * as AOS from 'aos';
 
 @Component({
   selector: 'app-experience',
   templateUrl: './experience.component.html',
   styleUrls: ['./experience.component.css'],
 })
-export class ExperienceComponent implements OnInit {
+export class ExperienceComponent {
   myWorks: {
     title: string;
     links: { outLink?: string; gitHub?: string };
@@ -78,11 +77,5 @@ export class ExperienceComponent implements OnInit {
 
   trackByIndex(id: number, element: any) {
     return element ? element.id : null;
-  }
-
-  ngOnInit(): void {
-    AOS.init({
-      once: true,
-    });
   }
 }
