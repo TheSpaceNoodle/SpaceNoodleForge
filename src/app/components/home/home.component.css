@@ -1,4 +1,4 @@
-#home {
+.home {
   min-height: 640px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7,26 +7,31 @@
   flex-wrap: wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: flex-start;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
-#home-bg-image {
-  height: 350px;
-  width: 400px;
-  background-image: url("../../../assets/d20.svg");
+.home-bg-image {
+  height: 21.875rem;
+  width: 25rem;
+  background-image: url('../../../assets/d20.svg');
   background-repeat: no-repeat;
   background-position: center;
   -webkit-filter: blur(4px);
   filter: blur(4px);
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-#header-welcome {
-  width: 630px;
-  position: absolute;
-  margin: 0 0 0 -670px;
+.header-welcome {
+  max-width: 39.375rem;
+  height: auto;
 }
 
 .small-heading {

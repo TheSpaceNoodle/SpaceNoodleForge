@@ -11,7 +11,6 @@ import { Component, HostListener } from '@angular/core';
 export class NavbarComponent {
   scrolled: number = document.scrollingElement?.scrollTop || 0;
   prevScroll!: number;
-
   navbarClassList: Record<string, boolean> = {
     navbar: true,
   };

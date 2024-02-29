@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
-import { ViewportAnimateDirective } from 'src/app/shared/directives/viewportAnimate.directive';
+import { HighlightDirective, AnimateOnScroll } from 'src/app/shared/directives';
 
 @Component({
   standalone: true,
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
-  imports: [ViewportAnimateDirective],
+  imports: [AnimateOnScroll, HighlightDirective],
 })
-export class HomeComponent {
-  constructor() {}
-}
+export class HomeComponent {}
