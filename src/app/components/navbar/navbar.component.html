@@ -1,14 +1,16 @@
 <navbar [ngClass]="navbarClassList">
-  <a href="#home" class="main-logo"><img src="./assets/logo.png" alt="" /></a>
+  <a href="#home" class="main-logo" appAOS="500" [aosDelay]="400" aosDirection="top-bottom"
+    ><img src="./assets/logo.png" alt=""
+  /></a>
 
   <ul class="nav-links">
-    <li data-aos="fade-down" data-aos-duration="1000">
+    <li data-aos="fade-down" appAOS="500" [aosDelay]="400" aosDirection="top-bottom">
       <a href="#about"><span class="number">01.</span> About</a>
     </li>
-    <li data-aos="fade-down" data-aos-duration="1000" data-aos-delay="50">
+    <li data-aos="fade-down" appAOS="500" [aosDelay]="600" aosDirection="top-bottom">
       <a href="#experience"><span class="number">02.</span> Experience</a>
     </li>
-    <li data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
+    <li data-aos="fade-down" appAOS="500" [aosDelay]="800" aosDirection="top-bottom">
       <a href="#contacts"><span class="number">03.</span> Contacts</a>
     </li>
   </ul>

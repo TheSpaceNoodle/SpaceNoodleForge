@@ -26,19 +26,20 @@
 
 .line1 {
   background-color: var(--important);
-  width: calc(1420px - 29%);
+  width: calc(100% - 29%);
   height: 1.5px;
 }
 
 .section-name {
-  font-size: 25px;
-  line-height: 35px;
-  margin: 0 8px;
+  font-size: 1.5625rem;
+  line-height: 2.1875rem;
+  margin: 0 0.5rem;
+  min-width: 8.125rem;
 }
 
 .line2 {
   background-color: var(--important);
-  width: calc(1420px - 81%);
+  width: calc(100% - 81%);
   height: 1.5px;
 }
 
@@ -86,7 +87,7 @@
 }
 
 #about-img {
-  background-image: url("../../../assets/Vector.svg");
+  background-image: url('../../../assets/Vector.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

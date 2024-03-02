@@ -1,12 +1,13 @@
 import { NgClass } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
+import { AnimateOnScrollDirective, HighlightDirective } from 'src/app/shared/directives';
 
 @Component({
   standalone: true,
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
-  imports: [NgClass],
+  imports: [NgClass, AnimateOnScrollDirective, HighlightDirective],
 })
 export class NavbarComponent {
   scrolled: number = document.scrollingElement?.scrollTop || 0;

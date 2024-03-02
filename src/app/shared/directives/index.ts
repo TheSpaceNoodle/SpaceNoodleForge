@@ -1,2 +1,2 @@
-export { AnimateOnScroll } from './animateOnScroll.directive';
+export { AnimateOnScrollDirective } from './AnimateOnScroll/animateOnScroll.directive';
 export { HighlightDirective } from './highlight.directive';

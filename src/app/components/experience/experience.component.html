@@ -1,47 +1,25 @@
 <section id="experience">
-  <div
-    class="section-heading"
-    data-aos="fade-up"
-    data-aos-duration="500"
-    data-aos-delay="200"
-  >
+  <div class="section-heading" appAOS="500" [aosDelay]="200">
     <div class="line1"></div>
-    <div class="section-name">
-      <span class="number">02. </span>My Experience
-    </div>
+    <div class="section-name"><span class="number">02. </span>My Experience</div>
     <div class="line2"></div>
   </div>
 
   <div id="experience-cards">
     <a
       class="card"
-      *ngFor="let work of myWorks; trackBy: trackByIndex"
-      data-aos="fade-up"
-      data-aos-duration="500"
-      data-aos-delay="250"
-      href="{{
-        work.links.outLink
-          ? work.links.outLink
-          : work.links.gitHub
-          ? work.links.gitHub
-          : ''
-      }}"
+      *ngFor="let work of myWorks; trackBy: trackByIndex; let i = index"
+      appAOS="500"
+      [aosDelay]="250 + i * 50"
+      href="{{ work.links.outLink ? work.links.outLink : work.links.gitHub ? work.links.gitHub : '' }}"
     >
       <div class="card-heading">
         <h3 class="card-title">{{ work.title }}</h3>
         <div class="card-links">
-          <a
-            href="{{ work.links.outLink }}"
-            target="_blank"
-            *ngIf="work.links.outLink"
-          >
+          <a href="{{ work.links.outLink }}" target="_blank" *ngIf="work.links.outLink">
             <img src="./assets/LinkOut.svg" alt="Link out" />
           </a>
-          <a
-            href="{{ work.links.gitHub }}"
-            target="_blank"
-            *ngIf="work.links.gitHub"
-          >
+          <a href="{{ work.links.gitHub }}" target="_blank" *ngIf="work.links.gitHub">
             <img src="./assets/socials/GitHub.svg" alt="GitHub" />
           </a>
         </div>
