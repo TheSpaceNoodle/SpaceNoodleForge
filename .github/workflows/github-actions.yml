@@ -1,21 +1,27 @@
-name: Deploy
+name: Build and Deploy
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: write
 
 jobs:
-  Deploy:
+  build-and-deploy:
+    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v2
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+        run: |
+          npm ci
+          npm run build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          node-version: 20.11.1
-
-      - name: Install Dependencies
-        run: npm install
-
-      - run: echo "Started building the project"
-      - run: npm run build
+          folder: docs # The folder the action should deploy.
