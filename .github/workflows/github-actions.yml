@@ -1,0 +1,21 @@
+name: Deploy
+
+on: [push]
+
+jobs:
+  Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 20.11.1
+
+      - name: Install Dependencies
+        run: npm install
+
+      - run: echo "Started building the project"
+      - run: npm run build
