@@ -26,6 +26,11 @@ export class AnimateOnScrollDirective implements OnInit {
   }
 
   ngOnInit(): void {
+    if (window.innerWidth <= 426) {
+      this.nativeElement.style.opacity = '1';
+      return;
+    }
+
     this.nativeElement.style.transition = `all ${this.appAOS}ms`;
     this.nativeElement.style.translate = this.translate[this.aosDirection];
 

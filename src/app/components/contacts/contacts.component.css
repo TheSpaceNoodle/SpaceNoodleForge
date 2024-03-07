@@ -32,7 +32,8 @@
 }
 
 .contact-me {
-  width: 800px;
+  max-width: 800px;
+  width: 100%;
   margin: 0 auto 200px;
 }
 

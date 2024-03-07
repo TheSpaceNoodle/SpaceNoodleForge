@@ -31,6 +31,7 @@
 
 .header-welcome {
   max-width: 39.375rem;
+  padding: 0 0 0 20px;
   height: auto;
 }
 
@@ -79,4 +80,18 @@ p {
 
 .lets-go:hover {
   background-color: rgba(255, 240, 181, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+  .home-bg-image {
+    display: none;
+  }
+
+  .header-welcome {
+    padding: 16px;
+  }
+
+  .big-heading {
+    font-size: 48px;
+  }
 }
