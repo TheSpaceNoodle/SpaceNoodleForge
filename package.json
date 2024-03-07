@@ -17,6 +17,7 @@
     "@angular/core": "^17.2.2",
     "@angular/platform-browser": "^17.2.2",
     "@angular/platform-browser-dynamic": "^17.2.2",
+    "@semantic-release/npm": "^11.0.3",
     "eslint": "^8.57.0",
     "rxjs": "~7.5.0",
     "semantic-release": "^23.0.2",
